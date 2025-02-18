@@ -1,10 +1,37 @@
 {
-  "name": "root",
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
+  "name": "culi-ui",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "lerna run build",
+    "test": "lerna run test",
+    "clean": "lerna clean",
+    "bootstrap": "lerna bootstrap",
+    "publish": "lerna publish",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
   "devDependencies": {
-    "lerna": "^8.1.9"
+    "@chromatic-com/storybook": "^3.2.4",
+    "@storybook/addon-essentials": "^8.5.6",
+    "@storybook/addon-interactions": "^8.5.6",
+    "@storybook/addon-onboarding": "^8.5.6",
+    "@storybook/blocks": "^8.5.6",
+    "@storybook/react": "^8.5.6",
+    "@storybook/react-vite": "^8.5.6",
+    "@storybook/test": "^8.5.6",
+    "@testing-library/react": "^16.2.0",
+    "@types/jest": "^27.5.2",
+    "@types/react": "^18.0.0",
+    "@types/testing-library__react": "^10.2.0",
+    "ject": "^1.1.0",
+    "lerna": "^7.0.0",
+    "storybook": "^8.5.6",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.0.0"
   }
 }
